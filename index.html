@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <link href="/index.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width:device-width,initial-scale:1.0,user-scalable:no">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+    <center>
+    <p id="demo"><img src="/48e60f51-197c-4d78-8d6b-2f0474bdbda0_200x200.png" style="width: 350px;height:200px;"></p>
+    <h1>Let's Calculate Your Age </h1>
+    <form action="">
+        <div style="overflow-x: auto;">
+            <table>
+                <tr>
+                    <td>
+                        Enter Your Date:
+                        <input type="number" id="datee" min="0" max="31">
+                    </td>
+                    <td>
+                        Enter your Month:
+                        <input type="number" id="monthh"min="0" max="12">
+                    </td>
+                    <td>
+                        Enter your Start Year: 
+                        <input type="number" id="yearr"min="1200">
+                    </td>
+                </tr>
+
+                <br>
+                <br>
+
+                <tr>
+                    <td>
+                        Enter Your Date:
+                        <input type="number" min="0" max="31" id="datee2" > 
+                    </td>
+                    <td>
+                        Enter your Month:
+                        <input type="number" id="monthh2" min="0" max="12">
+                    </td>
+                    <td>
+                        Enter your Final Year:
+                        <input type="number" id="yearr2"min="1200">
+                        
+                    </td>
+                </tr>
+                <br>
+            </table>
+            </div>
+            <br>
+          
+            <input type="button" value="Get your Day" onclick="day_finder()">
+       
+        </center>
+
+    </form>
+    <div id="day_find">
+        <h2>This calculator calculates the day you will enter as initial day and then it will calculate the age from initial year to final 
+            ,it will also count total number of months , weeks , days , hours , minutes and seconds. 
+        </h2>
+   
+</div>
+
+    <!--     
+    <br>
+    <h2>Area Of Triangle</h2>
+    <p id="demo3"></p>
+
+    <h2>Finding Saturday with 1st January</h2>
+    <p id="demo4"></p>
+
+    <h2>Solving multiply and divide</h2>
+    <form>
+        FIRST NUMBER
+        <input type="text" id="firstnumber" style="margin-left: 30px;margin-bottom: 5px;"><br>
+        SECOND NUMBER
+        <input type="text" id="secondnumber"style="margin-left: 10px;"><br>
+        <input type="button" value="MULTUPLY" onclick="multiply()" >
+        <input type="button" value="DIVIDE" onclick="divide()">
+        
+    </form>
+    <p>The result is:</br>
+    <span id="result"></span></p> 
+<br>
+ -->
+
+    <script src="/day_finder.js"></script>
+    <!-- <script src="/multiply_divide.js"></script>
+    <script src="/practice1_dateshow.js"></script>
+    <script src="/find_leap_year.js"></script>
+    <script src="/practice2_area.js"></script> -->
+</body>
+
+</html>
