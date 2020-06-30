@@ -19,14 +19,15 @@ h2{
 }
 #day_find {
 	background-color: #425a5a;
-    border: 25px solid #523620;
-    color: azure;
+    	border: 25px solid #523620;
+    	color: azure;
 	border-radius: 20px;
 	padding: 40px 20px;
 	margin: 0px auto;
 	height: 350px;
 	width: 600px;
-	text-align: center;}
+	text-align: center;
+}
 /* tr{
     
     display: inline-flex;
