@@ -28,6 +28,10 @@ var day_finder = () => {
 
     //  For calculating days 
     if (iyear == tyear) {
+        if(imonth==fmonth){
+            tDays=fdates-idates
+        }
+        else{
         if (month == 0 || month == 2 || month == 4 || month == 6 || month == 7 || month == 9 || month == 11) {
             sidates = 31 - idates
         }
@@ -61,7 +65,7 @@ var day_finder = () => {
             tDays += nidates
         }
         tDays = tDays + sidates + fdates
-
+    }
     }
     else {
         for (i = iyear + 1; i <= tyear - 1; i++) {
