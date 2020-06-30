@@ -24,6 +24,43 @@ var day_finder = () => {
 
 //  For calculating days 
 
+if (iyear == tyear) {
+    if (month == 0 || month == 2 || month == 4 || month == 6 || month == 7 || month == 9 || month == 11) {
+        sidates = 31 - idates
+    }
+    else if (month == 1) {
+        if (iyear % 4 == 0) {
+            sidates = 29 - idates
+        }
+        else {
+            sidates = 28 - idates
+        }
+    }
+    else {
+        sidates = 30 - idates
+    }
+
+    for (i = imonth + 1; i < fmonth; i++) {
+        if (imonth == 0 || imonth == 2 || imonth == 4 || imonth == 6 || imonth == 7 || imonth == 9 || imonth == 11) {
+            nidates = 31 - idates
+        }
+        else if (month == 1) {
+            if (iyear % 4 == 0) {
+                nidates = 29 - idates
+            }
+            else {
+                nidates = 28 - idates
+            }
+        }
+        else {
+            nidates = 30 - idates
+        }
+        tDays += nidates
+    }
+    tDays = tDays + sidates + fdates
+
+}
+else{    
     for (i = iyear + 1; i <= tyear - 1; i++) {
         if (i % 4 == 0) {
             y_days = 366;
@@ -103,7 +140,7 @@ var day_finder = () => {
     }
 
     tDays = parseInt(tDays) + parseInt(dater2) + parseInt(imonthdays) + parseInt(tidays) + parseInt(tfdays)
-
+}
 
 
 
