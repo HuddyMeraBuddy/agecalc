@@ -202,8 +202,8 @@ alert("Entered Wrong Month Number")
 document.getElementById("monthh").value=""
 document.getElementById("monthh2").value=''
 }
-else if(iyear<0 || tyear<0){
-    alert("You Entered Negative Year")
+else if(iyear<1200 || tyear<1200){
+    alert("Year values shouldn't be less than 1200")
     document.getElementById("yearr").value=""
     document.getElementById("yearr2").value=''
 }
